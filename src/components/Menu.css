@@ -1,0 +1,26 @@
+/* menu */
+.menu {
+  height: 100px;
+  display: flex;
+  color: #fff;
+}
+
+.menu .logo {
+  font-size: 40px;
+  flex-grow: 1;
+  margin: auto 10px;
+}
+
+.menu .list-menu {
+  font-size: 20px;
+  list-style: none;
+  display: flex;
+}
+
+.menu .list-menu .menu-item {
+  margin: auto 10px;
+}
+
+.menu-item a {
+  color: #fff;
+}
