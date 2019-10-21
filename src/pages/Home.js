@@ -10,10 +10,11 @@ import './Home.css';
 function Home() {
   const [ books, setBooks ] = useState([]);
   const [ loading, setLoading ] = useState(false);
-
+  // fetch data from server
   useEffect(() => {
     const fetchData = async () => {
-      const res = await axios.get('https://7x5xg.sse.codesandbox.io/books');
+      const res = await axios.get('https://book-store-nodejs-react.herokuapp.com/api/books');
+      console.log(res);
       setBooks(books => [...books, ...res.data]);
     }
 
@@ -35,7 +36,13 @@ function Home() {
         </p>
         <div className="hot-products-list">
           { books.map((book, index) => (
-            <HotBook key={index} url={book.img} />
+            <HotBook 
+              key={index}
+              sale={20}
+              name={book.name}
+              price={book.price}
+              url={book.img} 
+            />
           ))}
         </div>
       </section>
