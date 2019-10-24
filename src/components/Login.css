@@ -22,7 +22,7 @@
   padding: 5px 0 5px 20px;
   border: none;
   border-bottom: 1px solid #DDD;
-  margin-bottom: 20px;
+  margin-bottom: 5px;
 }
 
 .login-form .login-form-value input:focus {
@@ -51,6 +51,14 @@
   font-size: 18px;
   border: none;
   background: linear-gradient(120deg, #3498db, #8e44ad, #3498db);
+}
+
+.login-form .error-message {
+  font-size: 12px;
+  color: red;
+  margin-left: 20px;
+  margin-bottom: 10px;
+  opacity: .7;
 }
 
 .login-form-footer {
