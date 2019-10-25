@@ -12,7 +12,6 @@ import './Home.css';
 function Home() {
   let history = useHistory();
   const [ books, setBooks ] = useState([]);
-  const [ loading, setLoading ] = useState(false);
   // fetch data from server
   useEffect(() => {
     // fetch token in client
