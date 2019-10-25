@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import { Link } from "react-router-dom";
+import PropTypes from 'prop-types';
 
 import './Login.css';
 
@@ -65,6 +66,11 @@ function Login({ handlerValidateForm, handlerSubmitPost }) {
       </div>
     </form>
   )
+}
+
+Login.propTypes = {
+  handlerValidateForm: PropTypes.func,
+  handlerSubmitPost: PropTypes.func
 }
 
 export default Login

@@ -73,6 +73,9 @@ function Signup({ handlerValidateForm, handlerSubmitPost }) {
   )
 }
 
-
+Signup.propTypes = {
+  handlerValidateForm: PropTypes.func,
+  handlerSubmitPost: PropTypes.func
+}
 
 export default Signup

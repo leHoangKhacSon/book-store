@@ -5,7 +5,6 @@ import { useHistory } from 'react-router-dom';
 import Menu from '../components/Menu';
 import Header from '../components/Header';
 import HotBook from '../components/HotBook';
-import { BookContext } from '../contexts/book';
 import { getToken } from '../heplers/jwt';
 import './Home.css';
 

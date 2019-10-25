@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types';
 
 import './HotBook.css';
 
@@ -28,6 +29,13 @@ function HotBook({name, price, url, sale}) {
       </p>
     </div>
   )
+}
+
+HotBook.propTypes = {
+  name: PropTypes.string,
+  price: PropTypes.number,
+  url: PropTypes.string,
+  sale: PropTypes.number
 }
 
 export default HotBook

@@ -1,4 +1,4 @@
-import React, { useState, useContext, useEffect } from 'react'
+import React, { useState, useEffect } from 'react'
 
 import axios from 'axios';
 
@@ -6,7 +6,6 @@ export const BookContext = React.createContext()
 
 function Book(props) {
   const [ books, setBooks ] = useState([]);
-  const [ loading, setLoading ] = useState(false);
 
   useEffect(() => {
     const fetchData = async () => {
